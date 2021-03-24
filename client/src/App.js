@@ -28,8 +28,9 @@ function App() {
       <Toolbar />
 
       <Switch>
-
+        
         <Route path="/learn" component={LearningMain} />
+
         <Route exact path="/" component={LandingMain} />
 
       </Switch>

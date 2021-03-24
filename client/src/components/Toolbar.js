@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import LearningMainContent from './LearningMainContent';
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
@@ -20,6 +21,7 @@ const StyledMainDivContainer = styled.section`
     align-items: center;
     background-color: #f0efeb;
     min-height: 5vh;
+    max-height: 5vh;
     font-family: 'Bebas Neue', cursive;
 `
   function onSignIn(googleUser) {
