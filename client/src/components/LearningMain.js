@@ -21,7 +21,6 @@ export const LearningMain = (props) => {
     return (
         <StyledMain>
         <LearningMainContent />
-        <AccordianNav />
         
         
         </StyledMain>

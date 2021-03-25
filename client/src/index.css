@@ -97,7 +97,9 @@ Style the root element to showcase the component in this demo. This is just for 
 /* style the component container */
 .accordion_container {
   position: absolute;
-  width: 300px;
+  /* top: 0px; */
+  right: 0px;
+  width: 17vw;
   background-color: #efefef;
   box-shadow: 8px 8px 7px #454545;
   border-radius: 5px;

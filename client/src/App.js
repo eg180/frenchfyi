@@ -6,7 +6,9 @@ import styled from 'styled-components';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Toolbar from "./components/Toolbar";
+import Dashboard from "./components/Dashboard"
 import LearningMain from "./components/LearningMain";
+import AccordionNav from "./components/AccordionNav"
 import LandingMain from "./components/LandingMain";
 
 
@@ -29,9 +31,10 @@ function App() {
 
       <Switch>
         
-        <Route path="/learn" component={LearningMain} />
-
+        <Route path="/learn" component={AccordionNav} />
+        <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/" component={LandingMain} />
+
 
       </Switch>
       <Footer />

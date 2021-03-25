@@ -49,7 +49,7 @@ export class Toolbar extends Component {
     return (
     <StyledMainDivContainer>
       <div><Link to="/learn">Start</Link></div>
-      <div></div>
+      <div><Link to="/dashboard">Admin Dashboard</Link></div>
       <div><a href="#">Blog</a></div>
       <div><a href="#">Create Account</a></div>
       
