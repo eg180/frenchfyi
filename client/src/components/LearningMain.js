@@ -6,9 +6,9 @@ import LearningMainContent from './LearningMainContent';
 
 const StyledMain = styled.main`
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
     background-color: #6d6875;
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
     background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
@@ -20,8 +20,8 @@ const StyledMain = styled.main`
 export const LearningMain = (props) => {
     return (
         <StyledMain>
-        <AccordianNav />
         <LearningMainContent />
+        <AccordianNav />
         
         
         </StyledMain>
