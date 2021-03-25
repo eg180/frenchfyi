@@ -1,7 +1,13 @@
 import React from 'react';
+import {
+  Link,
+  Route, 
+  Switch
+} from 'react-router-dom';
 import * as Lessons from './Lessons';
 import LearningMain from './LearningMain'
 import styled from 'styled-components';
+
 
 
 const StyledNavLearingContainer = styled.div`
@@ -25,11 +31,19 @@ class AccordionMenu extends React.Component {
     super(props);
     this.state = {
       contentVisible: false,
-      chapterTitle: "être et avoir"
+      sectionTitle: "Foundations",
+      selectedComponent: ''
     };
     // bind event handler methods here (defined below) for callback to work
     this.toggleContentVisible = this.toggleContentVisible.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    // this.chapterTitle = this.chapterTitle.bind(this);
   }
+
+
+  handleClick(e) {
+    console.log(e.target.value)
+  };
 
   toggleContentVisible() {
     // called at onClick of accordion button
@@ -38,13 +52,25 @@ class AccordionMenu extends React.Component {
       return { contentVisible: !prevState.contentVisible };
     });
   }
-
+  
   render() {
-    console.log(Lessons);
+
+
+  
+    
     return (
       <StyledNavLearingContainer>
         
-       <div className='the-content'>Content</div>
+       <div className='the-content'>
+
+        <LearningMain />
+
+
+       </div>
+
+
+
+
 
 
         <div className="accordion_container">
@@ -55,7 +81,7 @@ class AccordionMenu extends React.Component {
               className="accordion_title"
               onClick={this.toggleContentVisible}
             >
-              {this.state.chapterTitle}
+              {this.state.sectionTitle}
             </button>
           </div>
           {/* For the below Div hide / show:
@@ -71,7 +97,7 @@ class AccordionMenu extends React.Component {
             }`}
           >
             <div className="list_item_container">
-              <p>Item 1</p>
+              <p><Link to="/lesson/1/etreavoir">être et avoir</Link></p>
             </div>
             <div className="list_item_container">
               <p>Item 2</p>
@@ -85,6 +111,19 @@ class AccordionMenu extends React.Component {
     );
 
   }
+
+  
+
+
+  // renderSelectedComponent(selectedComponent) {
+  //   if (!selectedComponent || selectedComponent === undefined) {
+  //     return <div><p>No Component Selected</p></div>
+
+  //   const Lesson = Lessons[selectedComponent];
+  //   }
+  // }
+
+
 }
 
 export default AccordionMenu;

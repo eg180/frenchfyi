@@ -1,5 +1,10 @@
 import React from 'react'
+import {
+    Route,
+    Switch
+} from 'react-router-dom';
 import styled from 'styled-components';
+import EtreAvoir from './Lessons/Chapter/1/EtreAvoir';
 
 // import { connect } from 'react-redux'
 
@@ -27,6 +32,12 @@ export const LearningMainContent = (props) => {
 
     return (
         <StyledMainContainer>
+            <EtreAvoir /> 
+            <Switch>
+                <Route path="/lesson/1/etreavoir" component={EtreAvoir} />       
+            </Switch>
+            
+
 
         </StyledMainContainer>
     )
