@@ -61,17 +61,6 @@ class AccordionMenu extends React.Component {
     return (
       <StyledNavLearingContainer>
         
-       <div className='the-content'>
-
-        <LearningMain />
-
-
-       </div>
-
-
-
-
-
 
         <div className="accordion_container">
           <div className="accordion">
@@ -97,13 +86,13 @@ class AccordionMenu extends React.Component {
             }`}
           >
             <div className="list_item_container">
+              <p><Link to="/lesson/0/intro">Intro</Link></p>
+            </div>          
+            <div className="list_item_container">
               <p><Link to="/lesson/1/etreavoir">être et avoir</Link></p>
             </div>
             <div className="list_item_container">
-              <p>Item 2</p>
-            </div>
-            <div className="list_item_container">
-              <p>Item 3</p>
+              <p><Link to="/lesson/1/etreavoir">Basic Numbers</Link></p>
             </div>
           </div>
         </div>

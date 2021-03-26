@@ -4,16 +4,16 @@ import styled from 'styled-components';
 
 const StyledMainContainer = styled.main`
     /* margin: 5rem 25rem 0rem 0rem; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     min-width: 70vw;
     margin: auto;
-    height: 69vh;
+    min-height: 78vh;
     /* max-height: 84vh; */
 
-    overflow: scroll;
+    /* overflow: scroll; */
     /* position: absolute; */
     background-color: #252422;
-    color: pink;
+    color: #eee4e1;
     section {
         display: flex;
         flex-direction: column;
@@ -36,15 +36,20 @@ const StyledMainContainer = styled.main`
     #lesson {
         margin-top: 3rem;
         margin-left: 2rem;
+        animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
 
     /* font-family: 'Anton', sans-serif; */
     /* font-family: 'Bebas Neue', cursive; */
     font-family: 'Kiwi Maru', serif;
+    font-size: 1.75rem;
     /* font-family: 'Lexend', sans-serif; */
     /* font-family: 'Permanent Marker', cursive; */
     /* font-family: 'Raleway', sans-serif; */
     /* font-family: 'Righteous', cursive; */
     }
+
 `
 
 export const EtreAvoir = (props) => {
@@ -55,70 +60,10 @@ export const EtreAvoir = (props) => {
                 <h2 id="chapter-subtitle">Key Concept</h2>
             </section>
             <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
+                <p>What you'll learn by the end of this lesson</p>
+                
             </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-            <section id="lesson">
-                <h2>To have, and to be. That is the question.</h2>
-            </section>
-
-
+   
         </StyledMainContainer>
     )
 }

@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 import { GoogleLogin } from 'react-google-login';
+import AccordionNav from './AccordionNav';
 
 const StyledMainDivContainer = styled.section`
     a {
@@ -48,8 +49,8 @@ export class Toolbar extends Component {
   render() {
     return (
     <StyledMainDivContainer>
+      <AccordionNav />
       <div><Link to="/learn">Start</Link></div>
-      <div><Link to="/dashboard">Admin Dashboard</Link></div>
       <div><a href="#">Blog</a></div>
       <div><a href="#">Create Account</a></div>
       

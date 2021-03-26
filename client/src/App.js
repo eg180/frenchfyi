@@ -8,8 +8,10 @@ import Footer from "./components/Footer";
 import Toolbar from "./components/Toolbar";
 import Dashboard from "./components/Dashboard"
 import LearningMain from "./components/LearningMain";
-import AccordionNav from "./components/AccordionNav"
+import AccordionNav from "./components/AccordionNav";
+import EtreAvoir from "./components/Lessons/Chapter/1/EtreAvoir";
 import LandingMain from "./components/LandingMain";
+import Intro from "./components/Lessons/Chapter/0/Intro.js";
 
 
 const StyledMainDivContainer = styled.main`
@@ -31,7 +33,9 @@ function App() {
 
       <Switch>
         
-        <Route path="/learn" component={AccordionNav} />
+        <Route path="/learn" component={LearningMain} />
+        <Route path="/lesson/0/intro" component={Intro} /> 
+        <Route path="/lesson/1/etreavoir" component={EtreAvoir} /> 
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/" component={LandingMain} />
 

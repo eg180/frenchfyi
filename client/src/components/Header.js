@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
 export const Header = (props) => {
     return (
         <StyledHeader>
-            <Link to="/"><h1 id="main-title">French.fyi</h1></Link>
+            <Link to="/"><h1 id="main-title">French.fail</h1></Link>
             
         </StyledHeader>
     )
