@@ -96,6 +96,18 @@ Style the root element to showcase the component in this demo. This is just for 
 
 /* style the component container */
 .accordion_container {
+  @media (max-width: 439px) {
+    /* background-color: red; */
+    /* position: absolute; */
+    /* min-width: 40vw; */
+  }
+  
+  
+  @media (max-width: 500px) {
+    /* background-color: red; */
+    /* position: absolute;
+    width: 10vw; */
+  }
   position: relative;
   /* top: 0px; */
   /* right: 0px; */
@@ -159,7 +171,17 @@ The .show_content class is added and removed from the accordion_content div in t
 .list_item_container p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+
+    @media (max-width: 275px) {
+      overflow: visible;
+      min-width: 40vw;
+  }
+
+  @media (max-width: 439px) {
+    font-size: 5px;
+    overflow: visible;
+  }
 }
 
 /* Style list_item text when list_item_container is hovered */

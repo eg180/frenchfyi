@@ -4,13 +4,16 @@ import {
   Route, 
   Switch
 } from 'react-router-dom';
+import { device } from './device.js';
 import * as Lessons from './Lessons';
 import LearningMain from './LearningMain'
+
 import styled from 'styled-components';
 
 
 
 const StyledNavLearingContainer = styled.div`
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;

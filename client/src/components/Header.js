@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { device } from "./device.js";
 import styled from 'styled-components';
 // import { connect } from 'react-redux'
 
 const StyledHeader = styled.header`
+    @media ${device.chromeCutOff} {
+      #main-title {
+          font-size: .25rem;
+          min-height: 3vh;
+      }
+    }
     #main-title {
         font-family: 'Permanent Marker', cursive;
         font-size: 5rem;

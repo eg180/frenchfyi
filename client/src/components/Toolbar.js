@@ -5,8 +5,30 @@ import styled from 'styled-components';
 import { Link } from "react-router-dom";
 import { GoogleLogin } from 'react-google-login';
 import AccordionNav from './AccordionNav';
+import { device } from './device.js';
 
 const StyledMainDivContainer = styled.section`
+  @media (max-width: 450px) {
+    /* flex-direction: column; */
+    /* font-size: .15rem; */
+    /* min-width: 100vw; */
+    min-width: 20vw;
+    .text-link {
+      display: none;
+    }
+    nav {
+      display: none;
+    }
+  }
+
+
+    @media ${device.mobileL} {
+      /* flex-direction: row; */
+      /* justify-content: center; */
+      a {
+        /* font-size: .75rem; */
+      }
+    }
     a {
       font-size: 2rem;
       :hover {
@@ -50,8 +72,8 @@ export class Toolbar extends Component {
     return (
     <StyledMainDivContainer>
       <AccordionNav />
-      <div><a href="#">Blog</a></div>
-      <div><a href="#">Create Account</a></div>
+      <div className="text-link"><a href="#">Blog</a></div>
+      <div className="text-link"><a href="#">Create Account</a></div>
       
       <div>
       <GoogleLogin
