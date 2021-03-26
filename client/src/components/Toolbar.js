@@ -50,7 +50,6 @@ export class Toolbar extends Component {
     return (
     <StyledMainDivContainer>
       <AccordionNav />
-      <div><Link to="/learn">Start</Link></div>
       <div><a href="#">Blog</a></div>
       <div><a href="#">Create Account</a></div>
       

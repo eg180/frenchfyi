@@ -113,7 +113,7 @@ export const EtreAvoir = (props) => {
 
                 <div className="card">
                     <div className="top"><img alt="starting line" src="/images/arcade.png" /> </div>
-                    <div className="bottom"><span>Intro</span><p>Solved Tasks: 0</p></div>
+                    <div className="bottom"><span>Intro</span><p>Solved Tasks: 1 ✅</p></div>
                 </div>
 
                 <div className="card">

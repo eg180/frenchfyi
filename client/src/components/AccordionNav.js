@@ -89,10 +89,10 @@ class AccordionMenu extends React.Component {
               <p><Link to="/lesson/0/intro">Intro</Link></p>
             </div>          
             <div className="list_item_container">
-              <p><Link to="/lesson/1/etreavoir">être et avoir</Link></p>
+              <p><Link to="#">être et avoir</Link></p>
             </div>
             <div className="list_item_container">
-              <p><Link to="/lesson/1/etreavoir">Basic Numbers</Link></p>
+              <p><Link to="#">Basic Numbers</Link></p>
             </div>
           </div>
         </div>
